@@ -35,6 +35,14 @@ h3 {
   z-index: -1;
 }
 
+.score {
+  float: right;
+  margin: 30px;
+}
+.score > * {
+  padding: 2px 0;
+}
+
 .cards {
   height: 70%;
   width: 85%; 
