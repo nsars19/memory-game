@@ -45,7 +45,7 @@ h3 {
 
 .cards {
   height: 70%;
-  width: 85%; 
+  width: 65%; 
   margin: 30px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -77,7 +77,12 @@ h3 {
   max-width: 180px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1080px) {
+  .cards {
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
   .cards {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20;
@@ -94,8 +99,9 @@ h3 {
   }
 }
 
-@media (max-width: 545px) {
+@media (max-width: 620px) {
   .cards {
+    width: 85%;
     grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
     gap: 15px;
   }
