@@ -54,7 +54,8 @@ h3 {
   text-align: center;
   transition: box-shadow 0.03s ease-out;
 }
-.card:hover {
+.card:hover,
+.card:focus {
   box-shadow: 0 0 3px #fff;
 }
 .card:active {
@@ -99,5 +100,16 @@ h3 {
   }
   h3 {
     font-size: 1.2em;
+  }
+  .card:active {
+    transition: transform 0.005s ease-out;
+    transform: scale(0.97);
+  }
+}
+
+@media (min-width: 1400px) {
+  .cards {
+    padding: 100px 0;
+    margin: 100px;
   }
 }
