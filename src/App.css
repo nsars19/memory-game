@@ -51,6 +51,7 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 50px;
   justify-items: center;
+  clear: both;
 }
 .card {
   max-height: 230px;
