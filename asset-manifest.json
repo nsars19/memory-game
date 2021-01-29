@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.6218f6c8.chunk.css",
+    "main.js": "/memory-game/static/js/main.a7f03424.chunk.js",
+    "main.js.map": "/memory-game/static/js/main.a7f03424.chunk.js.map",
+    "runtime-main.js": "/memory-game/static/js/runtime-main.33578197.js",
+    "runtime-main.js.map": "/memory-game/static/js/runtime-main.33578197.js.map",
+    "static/js/2.305faa38.chunk.js": "/memory-game/static/js/2.305faa38.chunk.js",
+    "static/js/2.305faa38.chunk.js.map": "/memory-game/static/js/2.305faa38.chunk.js.map",
+    "index.html": "/memory-game/index.html",
+    "static/css/main.6218f6c8.chunk.css.map": "/memory-game/static/css/main.6218f6c8.chunk.css.map",
+    "static/js/2.305faa38.chunk.js.LICENSE.txt": "/memory-game/static/js/2.305faa38.chunk.js.LICENSE.txt",
+    "static/media/american.dd4015c3.jpeg": "/memory-game/static/media/american.dd4015c3.jpeg",
+    "static/media/bleu.7b9abb9f.jpeg": "/memory-game/static/media/bleu.7b9abb9f.jpeg",
+    "static/media/brie.0005969d.jpeg": "/memory-game/static/media/brie.0005969d.jpeg",
+    "static/media/camembert.ee2c7190.jpeg": "/memory-game/static/media/camembert.ee2c7190.jpeg",
+    "static/media/cheddar.13f1af92.jpeg": "/memory-game/static/media/cheddar.13f1af92.jpeg",
+    "static/media/colby.b92d56aa.jpeg": "/memory-game/static/media/colby.b92d56aa.jpeg",
+    "static/media/feta.b6bafda7.jpeg": "/memory-game/static/media/feta.b6bafda7.jpeg",
+    "static/media/gouda.470f033d.jpeg": "/memory-game/static/media/gouda.470f033d.jpeg",
+    "static/media/jarlsberg.f9a9e38d.jpeg": "/memory-game/static/media/jarlsberg.f9a9e38d.jpeg",
+    "static/media/lambert.268d7708.jpeg": "/memory-game/static/media/lambert.268d7708.jpeg",
+    "static/media/mascarpone.959bdde6.webp": "/memory-game/static/media/mascarpone.959bdde6.webp",
+    "static/media/mozz.6732a9e4.jpeg": "/memory-game/static/media/mozz.6732a9e4.jpeg",
+    "static/media/App.css": "/memory-game/static/media/nightsky.65f7452b.jpeg",
+    "static/media/parmesan.40267dfd.jpeg": "/memory-game/static/media/parmesan.40267dfd.jpeg",
+    "static/media/pepperjack.87c60e56.webp": "/memory-game/static/media/pepperjack.87c60e56.webp",
+    "static/media/roquefort.915c46c5.jpeg": "/memory-game/static/media/roquefort.915c46c5.jpeg",
+    "static/media/swiss.a7614ffc.jpeg": "/memory-game/static/media/swiss.a7614ffc.jpeg",
+    "static/media/tilsit.9807f35b.jpeg": "/memory-game/static/media/tilsit.9807f35b.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.33578197.js",
+    "static/js/2.305faa38.chunk.js",
+    "static/css/main.6218f6c8.chunk.css",
+    "static/js/main.a7f03424.chunk.js"
+  ]
+}
