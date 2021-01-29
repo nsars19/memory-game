@@ -1,6 +1,6 @@
 const Card = (props) => {
   return (
-    <div className="card" onClick={() => props.onClick(props.name)}>
+    <div className="card" onClick={props.onClick.bind(this, props.name)}>
       <div className="card-img">
         <img src={props.imgSrc} />
       </div>
