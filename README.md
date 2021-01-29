@@ -1,4 +1,4 @@
-View live (here)[https://nsars19.github.io/memory-game/]
+View live [here](https://nsars19.github.io/memory-game/)
 
 A memory card game built with React for the purpose of learning hooks & state with functional components.
 
