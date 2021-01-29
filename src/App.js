@@ -27,6 +27,7 @@ function App() {
   const [highScore, setHighScore] = useState(0);
   const [currentScore, setCurrentScore] = useState(0);
   const [currentDeck, setCurrentDeck] = useState(null);
+  const [guessList, setGuessList] = useState([]);
 
   useEffect(() => {
     setTimeout(() => {
