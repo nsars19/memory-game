@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import uniqid from "uniqid";
 import Header from "./components/Header";
 import Card from "./components/Card";
+import Loading from "./components/Loading";
 import cheddar from "./assets/cheddar.jpeg";
 import swiss from "./assets/swiss.jpeg";
 import american from "./assets/american.jpeg";
@@ -12,28 +13,83 @@ import parm from "./assets/parmesan.jpeg";
 import bleu from "./assets/bleu.jpeg";
 import brie from "./assets/brie.jpeg";
 import pepperjack from "./assets/pepperjack.webp";
+import gouda from "./assets/gouda.jpeg";
+import gruyere from "./assets/gruyere.jpeg";
+import camembert from "./assets/camembert.jpeg";
+import jarlsberg from "./assets/jarlsberg.jpeg";
+import tilsit from "./assets/tilsit.jpeg";
+import lambert from "./assets/lambert.jpeg";
+import roquefort from "./assets/roquefort.jpeg";
+import mascarpone from "./assets/mascarpone.webp";
+import feta from "./assets/feta.jpeg";
 
 function App() {
   const [highScore, setHighScore] = useState(0);
   const [currentScore, setCurrentScore] = useState(0);
+  const [currentDeck, setCurrentDeck] = useState(null);
 
-  return (
-    <>
-      <div className="bg-img" />
-      <div className="score">
-        <h3 className="score-high">High-score: {highScore}</h3>
-        <h3 className="score-current">Current score: {currentScore}</h3>
-      </div>
-      <div className="cards">
-        <Card imgSrc={cheddar} name="cheddar" />
-        <Card imgSrc={swiss} name="swiss" />
-        <Card imgSrc={american} name="american" />
-        <Card imgSrc={mozz} name="mozz" />
-        <Card imgSrc={colby} name="colby" />
-        <Card imgSrc={parm} name="parmesan" />
-      </div>
-    </>
-  );
+  useEffect(() => {
+    setTimeout(() => {
+      buildDeck();
+    }, 1000);
+  }, []);
+
+  const isDeckSet = () => !!currentDeck;
+
+  const buildDeck = () => {
+    let cheeses = [
+      [gouda, "gouda"],
+      [gruyere, "gruyere"],
+      [camembert, "camembert"],
+      [jarlsberg, "jarlsberg"],
+      [tilsit, "tilsit"],
+      [lambert, "lambert"],
+      [roquefort, "roquefort"],
+      [mascarpone, "mascarpone"],
+      [feta, "feta"],
+      [cheddar, "cheddar"],
+      [swiss, "swiss"],
+      [american, "american"],
+      [colby, "colby"],
+      [mozz, "mozzarella"],
+      [parm, "parmesan"],
+      [bleu, "bleu"],
+      [brie, "brie"],
+      [pepperjack, "pepperjack"],
+    ];
+
+    const selectedCheeses = [];
+    for (let i = 0; i < 6; i++) {
+      const idx = Math.floor(Math.random() * cheeses.length);
+      const [chosen, name] = cheeses.splice(idx, 1)[0];
+
+      selectedCheeses.push(
+        <Card imgSrc={chosen} name={name} key={uniqid()} onClick={handleClick}/>
+      );
+    }
+
+    setCurrentDeck(selectedCheeses);
+  };
+
+  const handleClick = (name) => {
+    console.log(name)
+  }
+
+  if (!isDeckSet()) {
+    return (
+      <>
+        <Header highScore={highScore} currentScore={currentScore} />
+        <Loading />
+      </>
+    );
+  } else {
+    return (
+      <>
+        <Header highScore={highScore} currentScore={currentScore} />
+        <div className="cards">{currentDeck}</div>
+      </>
+    );
+  }
 }
 
 export default App;
