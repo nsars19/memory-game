@@ -72,8 +72,17 @@ function App() {
     setCurrentDeck(selectedCheeses);
   };
 
-  const handleClick = (name) => {
-    console.log(name)
+  const handleClick = (name, event) => {
+    if (guessList.includes(name)) {
+      setHighScore(currentScore);
+      setCurrentScore(0);
+      setGuessList([]);
+      console.log(event.target)
+      return
+    }
+
+    setCurrentScore(currentScore + 1)
+    setGuessList([...guessList, name])
   }
 
   if (!isDeckSet()) {
