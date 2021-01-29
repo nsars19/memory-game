@@ -1,6 +1,6 @@
 const Card = (props) => {
   return (
-    <div className="card">
+    <div className="card" onClick={props.onClick}>
       <div className="card-img">
         <img src={props.imgSrc} />
       </div>
