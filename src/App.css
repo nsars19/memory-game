@@ -76,6 +76,64 @@ h3 {
   max-width: 180px;
 }
 
+.load-wrap {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  display: grid;
+  place-items: center;
+}
+
+.loading {
+  color: #eee;
+  letter-spacing: 4px;
+  position: relative;
+}
+
+#ld-0,
+#ld-1,
+#ld-2,
+#ld-3,
+#ld-4,
+#ld-5,
+#ld-6,
+#ld-7,
+#ld-8,
+#ld-9 {
+  position: relative;
+  animation: jump 1.0s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s infinite normal none;
+}
+
+#ld-0 { animation-delay: 0.00s;}
+#ld-1 { animation-delay: 0.10s;}
+#ld-2 { animation-delay: 0.20s;}
+#ld-3 { animation-delay: 0.3s;}
+#ld-4 { animation-delay: 0.40s;}
+#ld-5 { animation-delay: 0.5s;}
+#ld-6 { animation-delay: 0.6s;}
+#ld-7 { animation-delay: 0.7s;}
+#ld-8 { animation-delay: 0.8s;}
+#ld-9 { animation-delay: 0.9s;}
+
+@keyframes jump {
+  0% {
+    top: 0px;
+    letter-spacing: 2.5px;
+    letter-spacing: 7px;
+  }
+  50% {
+    top: 7px;
+    letter-spacing: 7px;
+    letter-spacing: 2.5px;
+    text-shadow: 1px -3px 2px #1119;
+  }
+  100% {
+    top: 0px;
+    letter-spacing: 2.5px;
+    letter-spacing: 7px;
+  }
+}
+
 @media (max-width: 1080px) {
   .cards {
     width: 75%;
@@ -132,57 +190,5 @@ h3 {
   .card:active {
     transition: transform 0.005s ease-out;
     transform: scale(0.97);
-  }
-}
-
-.loading {
-  color: #eee;
-  letter-spacing: 4px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-}
-
-#ld-0,
-#ld-1,
-#ld-2,
-#ld-3,
-#ld-4,
-#ld-5,
-#ld-6,
-#ld-7,
-#ld-8,
-#ld-9 {
-  position: relative;
-  animation: jump 1.0s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s infinite normal none;
-}
-
-#ld-0 { animation-delay: 0.00s;}
-#ld-1 { animation-delay: 0.10s;}
-#ld-2 { animation-delay: 0.20s;}
-#ld-3 { animation-delay: 0.3s;}
-#ld-4 { animation-delay: 0.40s;}
-#ld-5 { animation-delay: 0.5s;}
-#ld-6 { animation-delay: 0.6s;}
-#ld-7 { animation-delay: 0.7s;}
-#ld-8 { animation-delay: 0.8s;}
-#ld-9 { animation-delay: 0.9s;}
-
-@keyframes jump {
-  0% {
-    top: 0px;
-    letter-spacing: 2.5px;
-    letter-spacing: 7px;
-  }
-  50% {
-    top: 7px;
-    letter-spacing: 7px;
-    letter-spacing: 2.5px;
-    text-shadow: 1px -3px 2px #1119;
-  }
-  100% {
-    top: 0px;
-    letter-spacing: 2.5px;
-    letter-spacing: 7px;
   }
 }
