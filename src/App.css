@@ -141,18 +141,6 @@ h3 {
   position: fixed;
   top: 50%;
   left: 50%;
-  /* animation: stretch 1.0s ease 0s infinite normal none; */
-}
-@keyframes stretch {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 #ld-0,
