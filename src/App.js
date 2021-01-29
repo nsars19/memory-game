@@ -12,7 +12,7 @@ import mozz from "./assets/mozz.jpeg";
 import parm from "./assets/parmesan.jpeg";
 import bleu from "./assets/bleu.jpeg";
 import brie from "./assets/brie.jpeg";
-import pepperjack from "./assets/pepperjack.webp";
+import pepperjack from "./assets/pepperjack.jpeg";
 import gouda from "./assets/gouda.jpeg";
 import gruyere from "./assets/gruyere.jpeg";
 import camembert from "./assets/camembert.jpeg";
@@ -20,7 +20,7 @@ import jarlsberg from "./assets/jarlsberg.jpeg";
 import tilsit from "./assets/tilsit.jpeg";
 import lambert from "./assets/lambert.jpeg";
 import roquefort from "./assets/roquefort.jpeg";
-import mascarpone from "./assets/mascarpone.webp";
+import mascarpone from "./assets/mascarpone.jpeg";
 import feta from "./assets/feta.jpeg";
 
 function App() {
