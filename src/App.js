@@ -34,7 +34,7 @@ function App() {
   }, [guessList]);
 
   useEffect(() => {
-    document.title = "Memory Cheese";
+    document.title = "A Real Brain Cheeser";
   }, []);
 
   const isDeckSet = () => !!currentDeck;
