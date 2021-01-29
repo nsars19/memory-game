@@ -30,10 +30,9 @@ function App() {
   const [guessList, setGuessList] = useState([]);
 
   useEffect(() => {
-    setTimeout(() => {
-      buildDeck();
-    }, 1000);
-  }, []);
+    buildDeck();
+    console.log(guessList)
+  }, [guessList]);
 
   const isDeckSet = () => !!currentDeck;
 
