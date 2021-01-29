@@ -192,3 +192,57 @@ h3 {
     transform: scale(0.97);
   }
 }
+
+.score-high {
+  animation-timing-function: ease;
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+  animation-direction: normal;
+  animation-delay: 0.0s;
+  animation-iteration-count: 1;
+}
+@keyframes changeColor {
+  0% {
+    color: #eee;
+  }
+  10% {
+    transform: scale(1.1)
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    color: #c22;
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    color: #eee;
+    transform: rotate(0deg);
+  }
+}
+@keyframes changeColor2 {
+  0% {
+    color: #eee;
+  }
+  10% {
+    transform: scale(1.1)
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    color: #c22;
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    color: #eee;
+    transform: rotate(0deg);
+  }
+}
+
