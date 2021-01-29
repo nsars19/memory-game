@@ -1,5 +1,7 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import uniqid from "uniqid";
+import Header from "./components/Header";
 import Card from "./components/Card";
 import cheddar from "./assets/cheddar.jpeg";
 import swiss from "./assets/swiss.jpeg";
