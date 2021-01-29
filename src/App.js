@@ -9,7 +9,7 @@ import mozz from "./assets/mozz.jpeg";
 import parm from "./assets/parmesan.jpeg";
 import bleu from "./assets/bleu.jpeg";
 import brie from "./assets/brie.jpeg";
-import ricotta from "./assets/ricotta.jpeg";
+import pepperjack from "./assets/pepperjack.webp";
 
 function App() {
   const [highScore, setHighScore] = useState(0);
