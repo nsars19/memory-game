@@ -62,10 +62,10 @@ function App() {
     const selectedCheeses = [];
     for (let i = 0; i < 6; i++) {
       const idx = Math.floor(Math.random() * cheeses.length);
-      const [chosen, name] = cheeses.splice(idx, 1)[0];
+      const [imgSrc, name] = cheeses.splice(idx, 1)[0];
 
       selectedCheeses.push(
-        <Card imgSrc={chosen} name={name} key={uniqid()} onClick={handleClick}/>
+        <Card imgSrc={imgSrc} name={name} key={uniqid()} onClick={handleClick}/>
       );
     }
 
