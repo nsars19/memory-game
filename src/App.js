@@ -76,7 +76,8 @@ function App() {
 
   const handleClick = (name) => {
     if (guessList.includes(name)) {
-      setHighScore(currentScore);
+      if (currentScore > highScore) setHighScore(currentScore);
+      
       setCurrentScore(0);
       setGuessList([]);
 
