@@ -31,7 +31,6 @@ function App() {
 
   useEffect(() => {
     buildDeck();
-    console.log(guessList)
   }, [guessList]);
 
   const isDeckSet = () => !!currentDeck;
@@ -71,12 +70,12 @@ function App() {
     setCurrentDeck(selectedCheeses);
   };
 
-  const handleClick = (name, event) => {
+  const handleClick = (name) => {
     if (guessList.includes(name)) {
       setHighScore(currentScore);
       setCurrentScore(0);
       setGuessList([]);
-      console.log(event.target)
+
       return
     }
 
