@@ -33,6 +33,10 @@ function App() {
     buildDeck();
   }, [guessList]);
 
+  useEffect(() => {
+    document.title = "Memory Cheese";
+  }, []);
+
   const isDeckSet = () => !!currentDeck;
 
   const buildDeck = () => {
