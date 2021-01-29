@@ -2,4 +2,4 @@ A memory card game built with React for the purpose of learning hooks & state wi
 
 Part of [The Odin Project's](https://www.theodinproject.com/courses/javascript/lessons/memory-card) curriculum.
 
-View live [here](https://nsars19.github.io/memory-game/)
+[View live](https://nsars19.github.io/memory-game/)
